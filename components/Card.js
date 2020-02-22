@@ -78,5 +78,6 @@ function Card({ result }) {
 export default Card;
 
 const Wrapper = styled.div`
-  margin: 24px 0 96px;
+  margin-top: 24px;
+  padding-bottom: 96px;
 `;
