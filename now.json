@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "flameous",
+  "alias": ["flameous.now.sh"],
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
+  ]
+}
