@@ -16,16 +16,16 @@ function Question({ question, answers, ...rest }) {
 
     setCorrect(isAnswerCorrect);
     setComment(answerComment);
-    rest.updateCounter(++rest.counter)
+    rest.updateCounter(++rest.counter);
     if (isAnswerCorrect) {
-      rest.updateCorrectCounter(++rest.correctAnswers)
+      rest.updateCorrectCounter(++rest.correctAnswers);
     }
   };
 
   const radioStyle = {
     display: "block",
-    height: "30px",
-    lineHeight: "30px"
+    lineHeight: "30px",
+    whiteSpace: "normal"
   };
 
   return (
@@ -62,4 +62,4 @@ const Wrapper = styled.div`
 
 const AnswerWrapper = styled.div`
   margin-top: 12px;
-`
+`;

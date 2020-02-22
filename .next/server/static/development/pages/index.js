@@ -123,7 +123,7 @@ const results = [{
 }, {
   id: 2,
   title: "Не фанзиль, но есть звоночки 🔔",
-  text: "В целом вы счастливы, но без проблем не обошлось. Возможно, у вас на ладится с противоположным полом или же вы просто petrolhead, ищущий внимания. В любом случае, всё не так страшно и с возрастом это пройдёт. Рекомендуется пройти этот тест ещё раз через пару лет, чтобы посмотреть на динамику безумия."
+  text: "В целом вы счастливы, но без проблем не обошлось. Возможно, у вас не ладится с противоположным полом или же вы просто petrolhead, ищущий внимания. В любом случае, всё не так страшно и с возрастом это пройдёт. Рекомендуется пройти этот тест ещё раз через пару лет, чтобы посмотреть на динамику безумия."
 }, {
   id: 3,
   title: "Опасное перепутье 🚸",
@@ -199,7 +199,7 @@ function Card({
 /* harmony default export */ __webpack_exports__["default"] = (Card);
 const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "Card__Wrapper",
-  componentId: "xtwp70-0"
+  componentId: "tiu9lr-0"
 })(["margin:24px 0 96px;"]);
 
 /***/ }),
@@ -263,8 +263,8 @@ function Question(_ref) {
 
   const radioStyle = {
     display: "block",
-    height: "30px",
-    lineHeight: "30px"
+    lineHeight: "30px",
+    whiteSpace: "normal"
   };
   return __jsx(Wrapper, {
     __source: {
@@ -332,12 +332,14 @@ function Question(_ref) {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Question);
-const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
-  margin: 24px 0;
-`;
-const AnswerWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
-  margin-top: 12px;
-`;
+const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "Question__Wrapper",
+  componentId: "sc-164vbo1-0"
+})(["margin:24px 0;"]);
+const AnswerWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
+  displayName: "Question__AnswerWrapper",
+  componentId: "sc-164vbo1-1"
+})(["margin-top:12px;"]);
 
 /***/ }),
 
@@ -442,7 +444,7 @@ const data = [{
     id: 2,
     answer: "Победа — не главное. Главное — это то, что мы с друзьями смогли собраться вместе и лампово поиграть в игры",
     comment: "Я бы хотел поиграть с вами в настолки, потому что видимо, вы неплохой человек.",
-    isCorrect: true
+    isCorrect: false
   }]
 }, {
   id: 6,
@@ -493,12 +495,12 @@ const data = [{
     id: 1,
     answer: "Предложу продолжить общение и поиграть во что-нибудь ещё после этой партии",
     comment: "Ответ верный для нормального человека. Как жаль, что тест не об этом.",
-    isCorrect: true
+    isCorrect: false
   }, {
     id: 2,
     answer: "Начну рандомно говорить токсичные вещи каждому из участников разговора",
     comment: "Поразительно, но именно так и поступил фанзиль прямо в момент, пока я работал над этим тестом.",
-    isCorrect: false
+    isCorrect: true
   }]
 }, {
   id: 10,
@@ -618,11 +620,11 @@ function Home() {
 
 const Container = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.main.withConfig({
   displayName: "pages__Container",
-  componentId: "sc-1cvwks4-0"
+  componentId: "sc-3cyjm2-0"
 })(["margin:0 auto;padding:64px 32px 0;max-width:1024px;width:100%;"]);
 const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "pages__Wrapper",
-  componentId: "sc-1cvwks4-1"
+  componentId: "sc-3cyjm2-1"
 })([""]);
 /* harmony default export */ __webpack_exports__["default"] = (Home);
 
